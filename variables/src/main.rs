@@ -2,12 +2,6 @@ use std::io;
 
 fn main() {
     println!("Hello, temprture conversion by james wright!");
-
-
-    let reference_to_nothing = no_dangle();
-    
-    println!("The string is '{}'.", reference_to_nothing);
-        
     
     loop {
      
@@ -57,9 +51,4 @@ fn farenheit_convert(a: f32)-> f32 {
     let a = a - 32.0;
     let a = a / 9.0;
     a * 5.0
-}
-
-fn no_dangle() -> String {
-    let s = String::from("hello james w");
-    s
 }
